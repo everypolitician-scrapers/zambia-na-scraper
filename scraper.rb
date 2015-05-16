@@ -39,7 +39,10 @@ pages.each do |page|
   page = noko(url)
 
   page.css('div.view-members-of-parliament div.panel-display').each do |entry|
-    mp_url = entry.css('.views-field-view-node a/@href').text
+    mp_url = @BASE + entry.css('.views-field-view-node a/@href').text
+
+    mp = noko(mp_url)
+
     party = entry.css('span.views-field-field-political-party .field-content').text.strip
     (party_name, party_id) = party.match(/(.*) \((.*)\)/).captures
 
@@ -49,6 +52,8 @@ pages.each do |page|
       photo: entry.css('div.field-content img/@src').text,
       constituency: entry.css('span.views-field-field-constituency-name .field-content').text.strip,
       party: party_name,
+      email: mp.css('.field-name-field-email .field-item a[@href*="parliament.gov.zm"]').text.strip,
+      birth_date: mp.css('.field-name-field-date .field-item .date-display-single/@content').text.split('T').first,
       party_id: party_id,
       source: url,
       term: 2011,
