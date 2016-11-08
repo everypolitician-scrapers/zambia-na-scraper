@@ -47,7 +47,7 @@ pages.each do |page|
 
     data = { 
       id: mp_url.split('/').last,
-      name: entry.css('.views-field-view-node a').text.split(/\s+/).join(" ").strip.gsub(/\s*,\s*MP\s*$/, ''),
+      name:         page.name(entry),
       photo: entry.css('div.field-content img/@src').text,
       constituency: entry.css('span.views-field-field-constituency-name .field-content').text.strip,
       party:        party_name,

@@ -18,6 +18,16 @@ class MembersPage < ScrapedPage
     split_party(entry).last
   end
 
+  def name(entry)
+    entry
+      .css('.views-field-view-node a')
+      .text
+      .split(/\s+/)
+      .join(' ')
+      .strip
+      .gsub(/\s*,\s*MP\s*$/, '')
+  end
+
   private
 
   def split_party(entry)
