@@ -28,6 +28,10 @@ class MembersPage < ScrapedPage
       .gsub(/\s*,\s*MP\s*$/, '')
   end
 
+  def photo(entry)
+    entry.css('div.field-content img/@src').text
+  end
+
   private
 
   def split_party(entry)

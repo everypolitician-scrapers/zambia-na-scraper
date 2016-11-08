@@ -48,7 +48,7 @@ pages.each do |page|
     data = { 
       id: mp_url.split('/').last,
       name:         page.name(entry),
-      photo: entry.css('div.field-content img/@src').text,
+      photo:        page.photo(entry),
       constituency: entry.css('span.views-field-field-constituency-name .field-content').text.strip,
       party:        party_name,
       email: mp.css('.field-name-field-email .field-item a[@href*="parliament.gov.zm"]').text.strip,
