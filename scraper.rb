@@ -1,21 +1,20 @@
 #!/bin/env ruby
 # encoding: utf-8
+# frozen_string_literal: true
 
 require 'scraperwiki'
 require 'nokogiri'
 require 'date'
 require 'open-uri'
-require 'date'
+require 'pry'
 
-# require 'colorize'
-# require 'pry'
-# require 'csv'
-# require 'open-uri/cached'
-# OpenURI::Cache.cache_path = '.cache'
+require 'require_all'
+require_all 'lib'
 
-def noko(url)
-  Nokogiri::HTML(open(url).read) 
-end
+# require 'colorize'
+# require 'csv'
+# require 'open-uri/cached'
+# OpenURI::Cache.cache_path = '.cache'
 
 def datefrom(date)
   Date.parse(date)
@@ -36,9 +35,9 @@ pages.each do |page|
   url = @BASE + page
   warn "Fetching #{url}"
 
-  page = noko(url)
+  page = MembersPage.new(url: url)
 
-  page.css('div.view-members-of-parliament div.panel-display').each do |entry|
+  page.mp_entries.each do |entry|
     mp_url = @BASE + entry.css('.views-field-view-node a/@href').text
 
     mp = noko(mp_url)
