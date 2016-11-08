@@ -38,7 +38,7 @@ pages.each do |page|
   page = MembersPage.new(url: url)
 
   page.mp_entries.each do |entry|
-    mp_url = @BASE + entry.css('.views-field-view-node a/@href').text
+    mp_url = page.mp_url(entry)
 
     mp = noko(mp_url)
 
