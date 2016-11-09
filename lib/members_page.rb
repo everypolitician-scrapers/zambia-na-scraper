@@ -9,6 +9,4 @@ class MembersPage < ScrapedPage
   def mp_url(entry)
     URI.join(url, entry.css('.views-field-view-node a/@href').text).to_s
   end
-
-  end
 end

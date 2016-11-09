@@ -4,21 +4,13 @@
 
 require 'scraperwiki'
 require 'nokogiri'
-require 'date'
-require 'open-uri'
 require 'pry'
 
 require 'require_all'
 require_all 'lib'
 
-# require 'colorize'
-# require 'csv'
 # require 'open-uri/cached'
 # OpenURI::Cache.cache_path = '.cache'
-
-def datefrom(date)
-  Date.parse(date)
-end
 
 base = 'http://www.parliament.gov.zm'
 
