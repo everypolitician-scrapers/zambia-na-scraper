@@ -49,7 +49,7 @@ pages.each do |page|
       id: mp_url.split('/').last,
       name:         page.name(entry),
       photo:        page.photo(entry),
-      constituency: entry.css('span.views-field-field-constituency-name .field-content').text.strip,
+      constituency: page.constituency(entry),
       party:        party_name,
       email: mp.css('.field-name-field-email .field-item a[@href*="parliament.gov.zm"]').text.strip,
       birth_date: mp.css('.field-name-field-date .field-item .date-display-single/@content').text.split('T').first,
