@@ -41,8 +41,6 @@ pages.each do |page|
     mp     = MemberPage.new(url: mp_url, entry: entry)
 
     data = {
-      party:        page.party_name(entry),
-      party_id:     page.party_id(entry),
       source:       url,
       term:         2011,
     }.merge(mp.to_h)

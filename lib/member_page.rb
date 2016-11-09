@@ -32,6 +32,10 @@ class MemberPage < ScrapedPage
       .strip
   end
 
+  field :party do
+    split_party.first
+  end
+
   field :email do
     noko
       .css('.field-name-field-email .field-item a[@href*="parliament.gov.zm"]')
@@ -47,7 +51,20 @@ class MemberPage < ScrapedPage
       .first
   end
 
+  field :party_id do
+    split_party.last
+  end
+
   private
 
   attr_reader :entry
+
+  def split_party
+    @split_party ||= entry
+                     .css('.views-field-field-political-party .field-content')
+                     .text
+                     .strip
+                     .match(/(.*) \((.*)\)/)
+                     .captures
+  end
 end
