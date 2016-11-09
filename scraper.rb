@@ -39,14 +39,12 @@ pages.each do |page|
 
   page.mp_entries.each do |entry|
     mp_url = page.mp_url(entry)
-
-    mp = noko(mp_url)
+    mp     = MemberPage.new(url: mp_url)
 
     party_name = page.party_name(entry)
     party_id   = page.party_id(entry)
 
-    data = { 
-      id: mp_url.split('/').last,
+    data = {
       name:         page.name(entry),
       photo:        page.photo(entry),
       constituency: page.constituency(entry),
@@ -56,7 +54,7 @@ pages.each do |page|
       party_id:     party_id,
       source: url,
       term: 2011,
-    }
+    }.merge(mp.to_h)
     # puts data
     ScraperWiki.save_sqlite([:name, :term], data)
     added += 1
