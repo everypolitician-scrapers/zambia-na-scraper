@@ -18,10 +18,6 @@ class MembersPage < ScrapedPage
     split_party(entry).last
   end
 
-  def photo(entry)
-    entry.css('div.field-content img/@src').text
-  end
-
   def constituency(entry)
     entry.css('span.views-field-field-constituency-name .field-content').text.strip
   end
