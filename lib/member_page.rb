@@ -25,6 +25,13 @@ class MemberPage < ScrapedPage
     entry.css('div.field-content img/@src').text
   end
 
+  field :constituency do
+    entry
+      .css('span.views-field-field-constituency-name .field-content')
+      .text
+      .strip
+  end
+
   field :email do
     noko
       .css('.field-name-field-email .field-item a[@href*="parliament.gov.zm"]')

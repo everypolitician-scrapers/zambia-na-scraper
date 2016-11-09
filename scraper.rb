@@ -41,7 +41,6 @@ pages.each do |page|
     mp     = MemberPage.new(url: mp_url, entry: entry)
 
     data = {
-      constituency: page.constituency(entry),
       party:        page.party_name(entry),
       party_id:     page.party_id(entry),
       source:       url,
