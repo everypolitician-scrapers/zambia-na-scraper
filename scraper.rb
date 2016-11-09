@@ -38,10 +38,9 @@ pages.each do |page|
 
   page.mp_entries.each do |entry|
     mp_url = page.mp_url(entry)
-    mp     = MemberPage.new(url: mp_url)
+    mp     = MemberPage.new(url: mp_url, entry: entry)
 
     data = {
-      name:         page.name(entry),
       photo:        page.photo(entry),
       constituency: page.constituency(entry),
       party:        page.party_name(entry),

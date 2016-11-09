@@ -2,8 +2,23 @@
 require 'scraped_page'
 
 class MemberPage < ScrapedPage
+  def initialize(url:, strategy: Strategy::LiveRequest.new, entry:)
+    @entry = entry
+    super(url: url, strategy: strategy)
+  end
+
   field :id do
     url.to_s.split('/').last
+  end
+
+  field :name do
+    entry
+      .css('.views-field-view-node a')
+      .text
+      .split(/\s+/)
+      .join(' ')
+      .strip
+      .gsub(/\s*,\s*MP\s*$/, '')
   end
 
   field :email do
@@ -20,4 +35,8 @@ class MemberPage < ScrapedPage
       .split('T')
       .first
   end
+
+  private
+
+  attr_reader :entry
 end
