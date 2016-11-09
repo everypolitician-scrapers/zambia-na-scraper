@@ -39,12 +39,7 @@ pages.each do |page|
   page.mp_entries.each do |entry|
     mp_url = page.mp_url(entry)
     mp     = MemberPage.new(url: mp_url, entry: entry)
-
-    data = {
-      source:       url,
-      term:         2011,
-    }.merge(mp.to_h)
-    ScraperWiki.save_sqlite(%i(name term), data)
+    ScraperWiki.save_sqlite(%i(name term), mp.to_h)
     added += 1
   end
 end

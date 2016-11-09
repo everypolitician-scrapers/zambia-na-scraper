@@ -55,6 +55,14 @@ class MemberPage < ScrapedPage
     split_party.last
   end
 
+  field :source do
+    URI.join(url, '/members-of-parliament').to_s
+  end
+
+  field :term do
+    2011
+  end
+
   private
 
   attr_reader :entry
