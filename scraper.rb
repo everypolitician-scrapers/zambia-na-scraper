@@ -49,7 +49,6 @@ pages.each do |page|
       photo:        page.photo(entry),
       constituency: page.constituency(entry),
       party:        party_name,
-      birth_date: mp.css('.field-name-field-date .field-item .date-display-single/@content').text.split('T').first,
       party_id:     party_id,
       source: url,
       term: 2011,

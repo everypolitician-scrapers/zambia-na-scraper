@@ -12,4 +12,12 @@ class MemberPage < ScrapedPage
       .text
       .strip
   end
+
+  field :birth_date do
+    noko
+      .css('.field-name-field-date .field-item .date-display-single/@content')
+      .text
+      .split('T')
+      .first
+  end
 end
