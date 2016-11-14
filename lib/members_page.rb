@@ -2,7 +2,7 @@
 require 'scraped_page'
 
 class MembersPage < ScrapedPage
-  def mp_entries
+  field :mp_entries do
     noko.css('.view-members-of-parliament .panel-display')
   end
 
