@@ -11,16 +11,6 @@ class MemberPage < ScrapedPage
     url.to_s.split('/').last
   end
 
-  field :name do
-    entry
-      .css('.views-field-view-node a')
-      .text
-      .split(/\s+/)
-      .join(' ')
-      .strip
-      .gsub(/\s*,\s*MP\s*$/, '')
-  end
-
   field :photo do
     entry.css('div.field-content img/@src').text
   end
