@@ -2,28 +2,8 @@
 require 'scraped_page'
 
 class MemberPage < ScrapedPage
-  def initialize(url:, strategy: Strategy::LiveRequest.new, entry:)
-    @entry = entry
-    super(url: url, strategy: strategy)
-  end
-
   field :id do
     url.to_s.split('/').last
-  end
-
-  field :photo do
-    entry.css('div.field-content img/@src').text
-  end
-
-  field :constituency do
-    entry
-      .css('span.views-field-field-constituency-name .field-content')
-      .text
-      .strip
-  end
-
-  field :party do
-    split_party.first
   end
 
   field :email do
@@ -41,28 +21,7 @@ class MemberPage < ScrapedPage
       .first
   end
 
-  field :party_id do
-    split_party.last
-  end
-
-  field :source do
-    URI.join(url, '/members-of-parliament').to_s
-  end
-
   field :term do
     2011
-  end
-
-  private
-
-  attr_reader :entry
-
-  def split_party
-    @split_party ||= entry
-                     .css('.views-field-field-political-party .field-content')
-                     .text
-                     .strip
-                     .match(/(.*) \((.*)\)/)
-                     .captures
   end
 end

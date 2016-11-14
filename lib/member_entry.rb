@@ -18,6 +18,29 @@ class MemberEntry
       .gsub(/\s*,\s*MP\s*$/, '')
   end
 
+  field :photo do
+    noko.css('div.field-content img/@src').text
+  end
+
+  field :constituency do
+    noko
+      .css('span.views-field-field-constituency-name .field-content')
+      .text
+      .strip
+  end
+
+  field :party do
+    split_party.first
+  end
+
+  field :party_id do
+    split_party.last
+  end
+
+  field :source do
+    url
+  end
+
   private
 
   attr_reader :url, :noko
