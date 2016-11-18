@@ -12,28 +12,20 @@ require_all 'lib'
 # require 'open-uri/cached'
 # OpenURI::Cache.cache_path = '.cache'
 
-base = 'http://www.parliament.gov.zm'
-
-# We should really extract these from the 'Next' links...
-pages = [
-  '/members-of-parliament',
-  '/members-of-parliament/page/1/0',
-  '/members-of-parliament/page/2/0',
-]
-
+page  = MembersPage.new(url: 'http://www.parliament.gov.zm/members-of-parliament')
 added = 0
-pages.each do |page|
-  url = base + page
-  warn "Fetching #{url}"
 
-  page = MembersPage.new(url: url)
-
+loop do
   page.mp_entries.each do |entry|
     mp_url = page.mp_url(entry)
     mp     = MemberPage.new(url: mp_url)
-    member = MemberEntry.new(url: url, noko: entry)
+    member = MemberEntry.new(url: mp_url, noko: entry)
     ScraperWiki.save_sqlite(%i(name term), mp.to_h.merge(member.to_h))
     added += 1
   end
+  next_url = page.next_page_url
+  break unless next_url
+  page = MembersPage.new(url: next_url)
 end
+
 puts "  Added #{added}"
