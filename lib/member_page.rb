@@ -11,10 +11,7 @@ class MemberPage < ScrapedPage
   end
 
   field :email do
-    noko
-      .css('.field-name-field-email .field-item a[@href*="parliament.gov.zm"]')
-      .text
-      .strip
+    noko.css('.field-name-field-email .field-item a').map(&:text).join(';')
   end
 
   field :birth_date do
