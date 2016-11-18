@@ -6,6 +6,10 @@ class MemberPage < ScrapedPage
     url.to_s.split('/').last
   end
 
+  field :photo do
+    noko.css('.panels-flexible-region-1-picture img/@src').first.text rescue ""
+  end
+
   field :email do
     noko
       .css('.field-name-field-email .field-item a[@href*="parliament.gov.zm"]')

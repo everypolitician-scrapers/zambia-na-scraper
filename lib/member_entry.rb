@@ -18,10 +18,6 @@ class MemberEntry
       .gsub(/\s*,\s*MP\s*$/, '')
   end
 
-  field :photo do
-    noko.css('div.field-content img/@src').text
-  end
-
   field :constituency do
     noko
       .css('span.views-field-field-constituency-name .field-content')
