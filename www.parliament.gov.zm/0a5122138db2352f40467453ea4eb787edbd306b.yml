@@ -18,7 +18,7 @@ response:
     message: OK
   headers:
     Date:
-    - Thu, 17 Nov 2016 16:57:32 GMT
+    - Tue, 20 Dec 2016 15:46:37 GMT
     Server:
     - Apache/2.4.10 (Ubuntu)
     X-Powered-By:
@@ -36,10 +36,10 @@ response:
     Vary:
     - Accept-Encoding
     Content-Length:
-    - '6339'
+    - '6474'
     Content-Type:
     - text/html; charset=utf-8
   body:
     encoding: UTF-8
   http_version: 
-recorded_at: Thu, 17 Nov 2016 16:57:28 GMT
+recorded_at: Tue, 20 Dec 2016 15:46:34 GMT
