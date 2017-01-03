@@ -18,7 +18,7 @@ def datefrom(date)
   Date.parse(date)
 end
 
-@BASE = 'http://www.parliament.gov.zm'
+BASE = 'http://www.parliament.gov.zm'
 
 # We should really extract these from the 'Next' links
 pages = [
@@ -29,13 +29,13 @@ pages = [
 
 added = 0
 pages.each do |page|
-  url = @BASE + page
+  url = URI.join(BASE, page)
   warn "Fetching #{url}"
 
   page = noko(url)
 
   page.css('div.view-members-of-parliament div.panel-display').each do |entry|
-    mp_url = @BASE + entry.css('.views-field-view-node a/@href').text
+    mp_url = URI.join(BASE, entry.css('.views-field-view-node a/@href').text)
 
     mp = noko(mp_url)
 
