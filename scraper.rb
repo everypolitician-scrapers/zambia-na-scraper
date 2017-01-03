@@ -2,17 +2,13 @@
 # encoding: utf-8
 # frozen_string_literal: true
 
-require 'scraperwiki'
+require 'date'
 require 'nokogiri'
-require 'date'
 require 'open-uri'
-require 'date'
+require 'scraperwiki'
 
-#  require 'colorize'
-#  require 'pry'
-#  require 'csv'
-#  require 'open-uri/cached'
-#  OpenURI::Cache.cache_path = '.cache'
+# require 'open-uri/cached'
+# OpenURI::Cache.cache_path = '.cache'
 
 def noko(url)
   Nokogiri::HTML(open(url).read)
@@ -24,7 +20,7 @@ end
 
 @BASE = 'http://www.parliament.gov.zm'
 
-# We should really extract these from the 'Next' links…
+# We should really extract these from the 'Next' links
 pages = [
   '/members-of-parliament',
   '/members-of-parliament/page/1/0',
@@ -58,7 +54,7 @@ pages.each do |page|
       source:       url,
       term:         2011,
     }
-    #  puts data
+    # puts data
     ScraperWiki.save_sqlite(%i(name term), data)
     added += 1
   end
