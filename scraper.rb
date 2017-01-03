@@ -45,7 +45,7 @@ pages.each do |page|
     (party_name, party_id) = party.match(/(.*) \((.*)\)/).captures
 
     data = {
-      id:           mp_url.split('/').last,
+      id:           mp_url.to_s.split('/').last,
       name:         entry.css('.views-field-view-node a').text.split(/\s+/).join(' ').strip.gsub(/\s*,\s*MP\s*$/, ''),
       photo:        entry.css('div.field-content img/@src').text,
       constituency: entry.css('span.views-field-field-constituency-name .field-content').text.strip,
@@ -53,8 +53,8 @@ pages.each do |page|
       email:        mp.css('.field-name-field-email .field-item a[@href*="parliament.gov.zm"]').text.strip,
       birth_date:   mp.css('.field-name-field-date .field-item .date-display-single/@content').text.split('T').first,
       party_id:     party_id,
-      source:       url,
-      term:         2011,
+      source:       url.to_s,
+      term:         2016,
     }
     # puts data
     ScraperWiki.save_sqlite(%i(name term), data)
