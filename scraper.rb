@@ -6,6 +6,7 @@ require 'date'
 require 'nokogiri'
 require 'open-uri'
 require 'scraperwiki'
+require 'scraped_page_archive/open-uri'
 
 # require 'open-uri/cached'
 # OpenURI::Cache.cache_path = '.cache'
