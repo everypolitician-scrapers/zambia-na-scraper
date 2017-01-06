@@ -34,24 +34,20 @@ pages.each do |page|
   url = URI.join(BASE, page).to_s
   warn "Fetching #{url}"
 
-  page = noko(url)
-
-  page.css('div.view-members-of-parliament div.panel-display').each do |entry|
-    mp_url = URI.join(BASE, entry.css('.views-field-view-node a/@href').text).to_s
-    mp_page = MemberPage.new(response: Scraped::Request.new(url: mp_url).response)
-
-    party = entry.css('span.views-field-field-political-party .field-content').text.strip
-    (party_name, party_id) = party.match(/(.*) \((.*)\)/).captures
+  MembersPage.new(response: Scraped::Request.new(url: url).response)
+             .member_rows
+             .each do |row|
+    mp_page = MemberPage.new(response: Scraped::Request.new(url: row.member_url).response)
 
     data = {
-      id:           mp_url.split('/').last,
-      name:         entry.css('.views-field-view-node a').text.split(/\s+/).join(' ').strip.gsub(/\s*,\s*MP\s*$/, ''),
-      photo:        entry.css('div.field-content img/@src').text,
-      constituency: entry.css('span.views-field-field-constituency-name .field-content').text.strip,
-      party:        party_name,
+      id:           entry.id,
+      name:         entry.name,
+      photo:        entry.photo,
+      constituency: entry.constituency,
+      party:        entry.party_name,
       email:        mp_page.email,
       birth_date:   mp_page.birth_date,
-      party_id:     party_id,
+      party_id:     entry.party_id,
       source:       url,
       term:         2011,
     }
