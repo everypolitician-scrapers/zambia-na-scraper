@@ -12,14 +12,6 @@ require_rel 'lib'
 require 'open-uri/cached'
 OpenURI::Cache.cache_path = '.cache'
 
-def noko(url)
-  Nokogiri::HTML(open(url).read)
-end
-
-def datefrom(date)
-  Date.parse(date)
-end
-
 BASE = 'http://www.parliament.gov.zm'
 
 # We should really extract these from the 'Next' links
