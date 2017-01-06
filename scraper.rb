@@ -39,19 +39,9 @@ pages.each do |page|
              .each do |row|
     mp_page = MemberPage.new(response: Scraped::Request.new(url: row.member_url).response)
 
-    data = {
-      id:           entry.id,
-      name:         entry.name,
-      photo:        entry.photo,
-      constituency: entry.constituency,
-      party:        entry.party_name,
-      email:        mp_page.email,
-      birth_date:   mp_page.birth_date,
-      party_id:     entry.party_id,
-      source:       url,
-      term:         2011,
-    }
-    # puts data
+    data = row.to_h
+              .merge(mp_page.to_h)
+              .merge(source: url, term: 2011)
     ScraperWiki.save_sqlite(%i(name term), data)
     added += 1
   end
