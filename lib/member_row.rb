@@ -22,7 +22,7 @@ class MemberRow < Scraped::HTML
     URI.join(BASE, noko.css('.views-field-view-node a/@href').text).to_s
   end
 
-  field :party_name do
+  field :party do
     party_name_and_id.first
   end
 
