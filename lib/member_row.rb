@@ -2,6 +2,10 @@
 require 'scraped'
 
 class MemberRow < Scraped::HTML
+  field :id do
+    member_url.split('/').last
+  end
+
   field :name do
     noko.css('.views-field-view-node a').text.split(/\s+/).join(' ').strip.gsub(/\s*,\s*MP\s*$/, '')
   end
@@ -14,20 +18,16 @@ class MemberRow < Scraped::HTML
     noko.css('span.views-field-field-constituency-name .field-content').text.strip
   end
 
-  field :id do
-    member_url.split('/').last
-  end
-
-  field :member_url do
-    URI.join(BASE, noko.css('.views-field-view-node a/@href').text).to_s
-  end
-
   field :party do
     party_name_and_id.first
   end
 
   field :party_id do
     party_name_and_id.last
+  end
+
+  field :member_url do
+    URI.join(BASE, noko.css('.views-field-view-node a/@href').text).to_s
   end
 
   private
