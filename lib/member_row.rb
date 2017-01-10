@@ -27,7 +27,7 @@ class MemberRow < Scraped::HTML
   end
 
   field :source do
-    URI.join(BASE, noko.css('.views-field-view-node a/@href').text).to_s
+    noko.css('.views-field-view-node a/@href').text
   end
 
   private
