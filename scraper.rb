@@ -11,6 +11,11 @@ OpenURI::Cache.cache_path = '.cache'
 
 BASE = 'http://www.parliament.gov.zm'
 
+def scrape(h)
+  url, klass = h.to_a.first
+  klass.new(response: Scraped::Request.new(url: url).response)
+end
+
 # We should really extract these from the 'Next' links
 pages = [
   '/members-of-parliament',
@@ -22,12 +27,8 @@ added = 0
 pages.each do |page|
   url = URI.join(BASE, page).to_s
   warn "Fetching #{url}"
-
-  MembersPage.new(response: Scraped::Request.new(url: url).response)
-             .member_rows
-             .each do |row|
-    mp_page = MemberPage.new(response: Scraped::Request.new(url: row.source).response)
-
+  (scrape url => MembersPage).member_rows.each do |row|
+    mp_page = scrape row.source => MemberPage
     data = row.to_h
               .merge(mp_page.to_h)
               .merge(source: url, term: 2011)
