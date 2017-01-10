@@ -29,7 +29,7 @@ pages.each do |page|
   MembersPage.new(response: Scraped::Request.new(url: url).response)
              .member_rows
              .each do |row|
-    mp_page = MemberPage.new(response: Scraped::Request.new(url: row.member_url).response)
+    mp_page = MemberPage.new(response: Scraped::Request.new(url: row.source).response)
 
     data = row.to_h
               .merge(mp_page.to_h)

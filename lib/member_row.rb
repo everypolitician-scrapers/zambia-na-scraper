@@ -3,7 +3,7 @@ require 'scraped'
 
 class MemberRow < Scraped::HTML
   field :id do
-    member_url.split('/').last
+    source.split('/').last
   end
 
   field :name do
@@ -26,7 +26,7 @@ class MemberRow < Scraped::HTML
     party_name_and_id.last
   end
 
-  field :member_url do
+  field :source do
     URI.join(BASE, noko.css('.views-field-view-node a/@href').text).to_s
   end
 
