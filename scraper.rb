@@ -2,23 +2,21 @@
 # encoding: utf-8
 # frozen_string_literal: true
 
-require 'date'
-require 'nokogiri'
-require 'open-uri'
 require 'scraperwiki'
+require 'require_all'
+require_rel 'lib'
 
 require 'open-uri/cached'
 OpenURI::Cache.cache_path = '.cache'
 
-def noko(url)
-  Nokogiri::HTML(open(url).read)
-end
-
-def datefrom(date)
-  Date.parse(date)
-end
-
 BASE = 'http://www.parliament.gov.zm'
+
+def scrape(h)
+  url, klass = h.to_a.first
+  klass.new(response: Scraped::Request.new(url: url).response)
+end
+
+ScraperWiki.sqliteexecute('DELETE FROM data') rescue nil
 
 # We should really extract these from the 'Next' links
 pages = [
@@ -31,30 +29,11 @@ added = 0
 pages.each do |page|
   url = URI.join(BASE, page).to_s
   warn "Fetching #{url}"
-
-  page = noko(url)
-
-  page.css('div.view-members-of-parliament div.panel-display').each do |entry|
-    mp_url = URI.join(BASE, entry.css('.views-field-view-node a/@href').text).to_s
-
-    mp = noko(mp_url)
-
-    party = entry.css('span.views-field-field-political-party .field-content').text.strip
-    (party_name, party_id) = party.match(/(.*) \((.*)\)/).captures
-
-    data = {
-      id:           mp_url.split('/').last,
-      name:         entry.css('.views-field-view-node a').text.split(/\s+/).join(' ').strip.gsub(/\s*,\s*MP\s*$/, ''),
-      photo:        entry.css('div.field-content img/@src').text,
-      constituency: entry.css('span.views-field-field-constituency-name .field-content').text.strip,
-      party:        party_name,
-      email:        mp.css('.field-name-field-email .field-item a[@href*="parliament.gov.zm"]').text.strip,
-      birth_date:   mp.css('.field-name-field-date .field-item .date-display-single/@content').text.split('T').first,
-      party_id:     party_id,
-      source:       url,
-      term:         2011,
-    }
-    # puts data
+  (scrape url => MembersPage).member_rows.each do |row|
+    mp_page = scrape row.source => MemberPage
+    data = row.to_h
+              .merge(mp_page.to_h)
+              .merge(source: url, term: 2011)
     ScraperWiki.save_sqlite(%i(name term), data)
     added += 1
   end
