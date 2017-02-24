@@ -42,6 +42,8 @@ GEM
     minispec-metadata (2.0.0)
       minitest
     minitest (5.10.1)
+    minitest-around (0.4.0)
+      minitest (~> 5.0)
     minitest-vcr (1.4.0)
       minispec-metadata (~> 2.0)
       minitest (>= 4.7.5)
@@ -87,6 +89,7 @@ PLATFORMS
 
 DEPENDENCIES
   minitest
+  minitest-around
   minitest-vcr
   nokogiri
   open-uri-cached
