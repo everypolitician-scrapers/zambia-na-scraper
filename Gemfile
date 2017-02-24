@@ -7,6 +7,7 @@ ruby '2.3.3'
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}.git" }
 
 gem 'minitest'
+gem 'minitest-around'
 gem 'minitest-vcr'
 gem 'nokogiri'
 gem 'open-uri-cached'
