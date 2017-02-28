@@ -1,0 +1,409 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.parliament.gov.zm/node/5314
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 28 Feb 2017 12:18:23 GMT
+      Server:
+      - Apache/2.4.10 (Ubuntu)
+      X-Powered-By:
+      - PHP/5.5.12-2ubuntu4.4
+      Expires:
+      - Sun, 19 Nov 1978 05:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      X-Content-Type-Options:
+      - nosniff
+      Content-Language:
+      - en
+      X-Frame-Options:
+      - SAMEORIGIN
+      Link:
+      - </node/5314>; rel="shortlink",</node/5314>; rel="canonical"
+      X-Generator:
+      - Drupal 7 (http://drupal.org)
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '6620'
+      Content-Type:
+      - text/html; charset=utf-8
+    body:
+      encoding: ASCII-8BIT
+      string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML+RDFa 1.0//EN\"\n  \"http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd\">\n<html
+        xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" version=\"XHTML+RDFa
+        1.0\" dir=\"ltr\"\n  xmlns:content=\"http://purl.org/rss/1.0/modules/content/\"\n
+        \ xmlns:dc=\"http://purl.org/dc/terms/\"\n  xmlns:foaf=\"http://xmlns.com/foaf/0.1/\"\n
+        \ xmlns:og=\"http://ogp.me/ns#\"\n  xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\n
+        \ xmlns:sioc=\"http://rdfs.org/sioc/ns#\"\n  xmlns:sioct=\"http://rdfs.org/sioc/types#\"\n
+        \ xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"\n  xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\">\n\n<head
+        profile=\"http://www.w3.org/1999/xhtml/vocab\">\n  <meta http-equiv=\"Content-Type\"
+        content=\"text/html; charset=utf-8\" />\n<link rel=\"shortcut icon\" href=\"http://www.parliament.gov.zm/sites/default/files/coat-of-arms-site.png\"
+        type=\"image/png\" />\n<link rel=\"shortlink\" href=\"/node/5314\" />\n<link
+        rel=\"canonical\" href=\"/node/5314\" />\n<meta name=\"Generator\" content=\"Drupal
+        7 (http://drupal.org)\" />\n  <title>Princess  Kasune  | National Assembly
+        of Zambia</title>\n  <style type=\"text/css\" media=\"all\">\n@import url(\"http://www.parliament.gov.zm/modules/system/system.base.css?om2zq8\");\n@import
+        url(\"http://www.parliament.gov.zm/modules/system/system.menus.css?om2zq8\");\n@import
+        url(\"http://www.parliament.gov.zm/modules/system/system.messages.css?om2zq8\");\n@import
+        url(\"http://www.parliament.gov.zm/modules/system/system.theme.css?om2zq8\");\n</style>\n<style
+        type=\"text/css\" media=\"all\">\n@import url(\"http://www.parliament.gov.zm/sites/all/modules/google_chart_tools/analytics_dashboard/analytics_dashboard.css?om2zq8\");\n@import
+        url(\"http://www.parliament.gov.zm/modules/comment/comment.css?om2zq8\");\n@import
+        url(\"http://www.parliament.gov.zm/sites/all/modules/date/date_api/date.css?om2zq8\");\n@import
+        url(\"http://www.parliament.gov.zm/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?om2zq8\");\n@import
+        url(\"http://www.parliament.gov.zm/modules/field/theme/field.css?om2zq8\");\n@import
+        url(\"http://www.parliament.gov.zm/modules/node/node.css?om2zq8\");\n@import
+        url(\"http://www.parliament.gov.zm/modules/search/search.css?om2zq8\");\n@import
+        url(\"http://www.parliament.gov.zm/modules/user/user.css?om2zq8\");\n@import
+        url(\"http://www.parliament.gov.zm/sites/all/modules/views/css/views.css?om2zq8\");\n@import
+        url(\"http://www.parliament.gov.zm/sites/all/modules/ckeditor/css/ckeditor.css?om2zq8\");\n</style>\n<style
+        type=\"text/css\" media=\"all\">\n@import url(\"http://www.parliament.gov.zm/sites/all/modules/ctools/css/ctools.css?om2zq8\");\n@import
+        url(\"http://www.parliament.gov.zm/sites/all/modules/jreject/jReject/css/jquery.reject.css?om2zq8\");\n</style>\n<style
+        type=\"text/css\" media=\"all\">\n@import url(\"http://www.parliament.gov.zm/sites/all/themes/parliamentpro/css/template.css?om2zq8\");\n@import
+        url(\"http://www.parliament.gov.zm/sites/all/themes/parliamentpro/css/styles.css?om2zq8\");\n@import
+        url(\"http://www.parliament.gov.zm/sites/all/themes/parliamentpro/css/parliament.css?om2zq8\");\n@import
+        url(\"http://www.parliament.gov.zm/sites/all/themes/parliamentpro/css/committee.css?om2zq8\");\n</style>\n
+        \ <script type=\"text/javascript\" src=\"http://www.parliament.gov.zm/misc/jquery.js?v=1.4.4\"></script>\n<script
+        type=\"text/javascript\" src=\"http://www.parliament.gov.zm/misc/jquery.once.js?v=1.2\"></script>\n<script
+        type=\"text/javascript\" src=\"http://www.parliament.gov.zm/misc/drupal.js?om2zq8\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.google.com/jsapi\"></script>\n<script
+        type=\"text/javascript\" src=\"http://www.parliament.gov.zm/sites/all/modules/jreject/jReject/js/jquery.reject.js?om2zq8\"></script>\n<script
+        type=\"text/javascript\">\n<!--//--><![CDATA[//><!--\n  (function($) {\n    Drupal.behaviors.jReject
+        = {\n      attach: function (context, settings) {\n        $.reject({\n        display:
+        [\"msie\", \"firefox\", \"safari\", \"opera\", \"chrome\", \"gcf\"],\n          reject:
+        {  \n              msie5: true, msie6: true, msie7: true, msie8: true, firefox2:
+        true, firefox3: true, firefox4: true, firefox5: true, firefox6: true, firefox7:
+        true, firefox8: true, firefox9: true, chrome1: true, chrome2: true, chrome3:
+        true, chrome4: true, chrome5: true, chrome6: true, chrome7: true, chrome8:
+        true, chrome9: true, chrome10: true, chrome11: true, chrome12: true, chrome13:
+        true, chrome14: true, chrome15: true, safari1: true, safari2: true, safari3:
+        true, safari4: true, opera1: true, opera2: true, opera3: true, opera4: true,
+        opera5: true, opera6: true, opera7: true, opera8: true, opera9: true\n          },\n
+        \         imagePath: '/sites/all/modules/jreject/jReject/images/',\n          enable:
+        true, header: \"Did you know that your Internet Browser is out of date?\",
+        paragraph1: \"Your browser is out of date, and may not be compatible with
+        our website. A list of the most popular web browsers can be found below.\",
+        paragraph2: \"Just click on the icons to get to the download page:\", closeMessage:
+        \"By closing this window you acknowledge that your experience on this website
+        may be degraded.\", closeLink: \"Close This Window\", closeURL: \"#\", close:
+        true, closeESC: true, closeCookie: false, overlayBgColor: \"#000\", overlayOpacity:
+        0.8, fadeInTime: \"fast\", fadeOutTime: \"fast\"\n        }); \n        return
+        false;  \n      }\n    }\n  })(jQuery);\n//--><!]]>\n</script>\n<script type=\"text/javascript\"
+        src=\"http://www.parliament.gov.zm/sites/all/modules/google_analytics/googleanalytics.js?om2zq8\"></script>\n<script
+        type=\"text/javascript\">\n<!--//--><![CDATA[//><!--\n(function(i,s,o,g,r,a,m){i[\"GoogleAnalyticsObject\"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+        Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,\"script\",\"//www.google-analytics.com/analytics.js\",\"ga\");ga(\"create\",
+        \"UA-3233109-1\", {\"cookieDomain\":\"auto\"});ga(\"set\", \"anonymizeIp\",
+        true);ga(\"send\", \"pageview\");\n//--><!]]>\n</script>\n<script type=\"text/javascript\"
+        src=\"http://www.parliament.gov.zm/sites/all/themes/parliamentpro/scripts/parliament.js?om2zq8\"></script>\n<script
+        type=\"text/javascript\" src=\"http://www.parliament.gov.zm/sites/all/themes/parliamentpro/scripts/jquery.sticky.js?om2zq8\"></script>\n<script
+        type=\"text/javascript\">\n<!--//--><![CDATA[//><!--\njQuery.extend(Drupal.settings,
+        {\"basePath\":\"\\/\",\"pathPrefix\":\"\",\"ajaxPageState\":{\"theme\":\"parliamentpro\",\"theme_token\":\"Onxf1lCCcwUfQSuG0-THwHyc5106hytVW8n2IYmilzM\",\"js\":{\"misc\\/jquery.js\":1,\"misc\\/jquery.once.js\":1,\"misc\\/drupal.js\":1,\"https:\\/\\/www.google.com\\/jsapi\":1,\"sites\\/all\\/modules\\/jreject\\/jReject\\/js\\/jquery.reject.js\":1,\"0\":1,\"sites\\/all\\/modules\\/google_analytics\\/googleanalytics.js\":1,\"1\":1,\"sites\\/all\\/themes\\/parliamentpro\\/scripts\\/parliament.js\":1,\"sites\\/all\\/themes\\/parliamentpro\\/scripts\\/jquery.sticky.js\":1},\"css\":{\"modules\\/system\\/system.base.css\":1,\"modules\\/system\\/system.menus.css\":1,\"modules\\/system\\/system.messages.css\":1,\"modules\\/system\\/system.theme.css\":1,\"sites\\/all\\/modules\\/google_chart_tools\\/analytics_dashboard\\/analytics_dashboard.css\":1,\"modules\\/comment\\/comment.css\":1,\"sites\\/all\\/modules\\/date\\/date_api\\/date.css\":1,\"sites\\/all\\/modules\\/date\\/date_popup\\/themes\\/datepicker.1.7.css\":1,\"modules\\/field\\/theme\\/field.css\":1,\"modules\\/node\\/node.css\":1,\"modules\\/search\\/search.css\":1,\"modules\\/user\\/user.css\":1,\"sites\\/all\\/modules\\/views\\/css\\/views.css\":1,\"sites\\/all\\/modules\\/ckeditor\\/css\\/ckeditor.css\":1,\"sites\\/all\\/modules\\/ctools\\/css\\/ctools.css\":1,\"sites\\/all\\/modules\\/jreject\\/jReject\\/css\\/jquery.reject.css\":1,\"sites\\/all\\/themes\\/parliamentpro\\/css\\/template.css\":1,\"sites\\/all\\/themes\\/parliamentpro\\/css\\/styles.css\":1,\"sites\\/all\\/themes\\/parliamentpro\\/css\\/parliament.css\":1,\"sites\\/all\\/themes\\/parliamentpro\\/css\\/committee.css\":1}},\"googleanalytics\":{\"trackOutbound\":1,\"trackMailto\":1,\"trackDownload\":1,\"trackDownloadExtensions\":\"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip\"},\"urlIsAjaxTrusted\":{\"\\/node\\/5314\":true}});\n//--><!]]>\n</script>\n
+        \ <script>\n    //alert(\"Test!!\");\n    jQuery(window).load(function(){\n
+        \     \n      jQuery(\"#naz-links\").sticky({ topSpacing: 0 });\n      \n
+        \   });\n  </script>\n</head>\n<body class=\"html not-front not-logged-in
+        no-sidebars page-node page-node- page-node-5314 node-type-mp\" >\n<!--[if
+        IE]><div id=\"IEroot\"><![endif]-->\n  <div id=\"skip-link\">\n    <a href=\"#main-content\"
+        class=\"element-invisible element-focusable\">Skip to main content</a>\n  </div>\n
+        \   \n<div class=\"root-wrap\">\n  <!--Header-->\n  <!--Under Construction
+        --->\n<!--  <div class=\"ucblock shadowed\" style=\"z-index:1000; width:120px;
+        height:100px; position:fixed\"><img style=\"width:130px\" class=\"uc\" src=\"/sites/all/themes/parliamentpro/images/uc.png\"
+        /></div> -->\n  <!--Under construction new-->\n  <div class=\"header-wrap\">\n
+        \   <div class=\"header\">\n      <div class=\"national-symbols\"></div>\n
+        \     <div class=\"header-logo\"></div>\n      <div class=\"related-links\">\n\t
+        \  <div class=\"parly-links\">\n\t\t<ul>\n\t\t<li><a href=\"/\">Home</a></li>\n\t\t<li><a
+        href=\"https://mail.parliament.gov.zm\">Mail</a></li>\n\t\t<li><a href=\"http://streamer.parliament.gov.zm:8063/listen.pls\">Radio</a></li>\n\t\t<li
+        class=\"last\"><a href=\"/locationmap\">Contact Us</a></li>\n\t\t</ul>\n\t
+        \  </div>\n\t  <!-- <div class=\"notice-marquee\" >\n                <marquee
+        loop=\"-1\" scrolldelay=\"100\" directionion=\"left\" >Please Note that this
+        is a new Website and Content is being updated. </marquee>\n        </div>-->\n\n\t\n
+        \     </div>\n\n    </div>\n  </div>\n  <!--End Header-->\n  <!-- Nav Menu-->\n\n
+        \ <div id=\"naz-links\" class=\"nav-menu-wrap\">\n    <div class=\"nav-menu\">\n
+        \     <div class=\"coat-of-arms\"></div>\n      <div class=\"menu-links\">
+        \ <div class=\"region region-menu-links\">\n    <div id=\"block-system-main-menu\"
+        class=\"block block-system block-menu\">\n\n    \n  <div class=\"content\">\n
+        \   <ul class=\"menu\"><li class=\"first leaf\"><a href=\"/\">Home</a></li>\n<li
+        class=\"expanded\"><a href=\"/node/108\" title=\"\">About Parliament</a><ul
+        class=\"menu\"><li class=\"first leaf\"><a href=\"/node/4529\">About National
+        Assembly</a></li>\n<li class=\"leaf\"><a href=\"/node/111\" title=\"\">History</a></li>\n<li
+        class=\"expanded\"><a href=\"/the-clerk\" title=\"\">The Clerk&#039;s Office</a><ul
+        class=\"menu\"><li class=\"first leaf\"><a href=\"/the-clerk\" title=\"\">The
+        Clerk</a></li>\n<li class=\"last leaf\"><a href=\"/node/159\">Departments</a></li>\n</ul></li>\n<li
+        class=\"leaf\"><a href=\"/invitations/career\" title=\"\">Careers at Parliament</a></li>\n<li
+        class=\"leaf\"><a href=\"/invitations/tenders\" title=\"\">Procurement</a></li>\n<li
+        class=\"leaf\"><a href=\"/node/110\">Visiting parliament</a></li>\n<li class=\"last
+        leaf\"><a href=\"/locationmap\" title=\"\">Contact Us</a></li>\n</ul></li>\n<li
+        class=\"expanded\"><a href=\"/members-of-parliament\" title=\"\">Members</a><ul
+        class=\"menu\"><li class=\"first expanded\"><a href=\"/presiding-officers%20\"
+        title=\"\">Presiding Officers</a><ul class=\"menu\"><li class=\"first leaf\"><a
+        href=\"/the-speaker/51\" title=\"\">The Speaker</a></li>\n<li class=\"leaf\"><a
+        href=\"/deputy-speaker/53\" title=\"\">The First Deputy Speaker</a></li>\n<li
+        class=\"last leaf\"><a href=\"/deputy-chairperson/63\" title=\"\">The Second
+        Deputy Speaker</a></li>\n</ul></li>\n<li class=\"expanded\"><a href=\"/ministers\"
+        title=\"\">Ministers</a><ul class=\"menu\"><li class=\"first leaf\"><a href=\"/members/cabinet\"
+        title=\"\">Cabinet</a></li>\n<li class=\"leaf\"><a href=\"/ministers/cabinet\"
+        title=\"\">Cabinet Ministers</a></li>\n<li class=\"last leaf\"><a href=\"/ministers/provincial\"
+        title=\"\">Provincial Ministers</a></li>\n</ul></li>\n<li class=\"leaf\"><a
+        href=\"/whips\" title=\"\">Whips</a></li>\n<li class=\"expanded\"><a href=\"/members-of-parliament\"
+        title=\"\">Members of Parliament</a><ul class=\"menu\"><li class=\"first leaf\"><a
+        href=\"/members/gender\" title=\"\">Gender Representation</a></li>\n<li class=\"leaf\"><a
+        href=\"/members/party\" title=\"\">Party Representation</a></li>\n<li class=\"last
+        leaf\"><a href=\"/members-of-parliament\" title=\"\">Members List</a></li>\n</ul></li>\n<li
+        class=\"leaf\"><a href=\"/members/constituencies\" title=\"\">Constituencies</a></li>\n<li
+        class=\"last leaf\"><a href=\"/members/previous-assembly\" title=\"List of
+        Members of Parliament in the 11th Assembly\">Immediate Past MPs</a></li>\n</ul></li>\n<li
+        class=\"expanded\"><a href=\"/committees\" title=\"\">Committees</a><ul class=\"menu\"><li
+        class=\"first leaf\"><a href=\"/node/109\">Committee System</a></li>\n<li
+        class=\"leaf\"><a href=\"/committees\" title=\"\">Committees</a></li>\n<li
+        class=\"leaf\"><a href=\"/node/91\">Attendance Guidlines</a></li>\n<li class=\"leaf\"><a
+        href=\"/committees/composition\" title=\"\">Committee Composition</a></li>\n<li
+        class=\"leaf\"><a href=\"/committees/timetable_grid\" title=\"Committee Sittings\">Committee
+        Timetable</a></li>\n<li class=\"expanded\"><a href=\"/committees/list-reports\"
+        title=\"\">Committee Reports</a><ul class=\"menu\"><li class=\"first leaf\"><a
+        href=\"/committees/all-reports/main\" title=\"Main Reports\">Main</a></li>\n<li
+        class=\"leaf\"><a href=\"/committees/all-reports/bills\" title=\"\">Bills</a></li>\n<li
+        class=\"leaf\"><a href=\"/committees/all-reports/select\" title=\"\">Select
+        (Ad Hoc)</a></li>\n<li class=\"last leaf\"><a href=\"/committees/all-reports/treaties\"
+        title=\"\">Treaties/ Agreements</a></li>\n</ul></li>\n<li class=\"leaf\"><a
+        href=\"/node/444\">Submission Procedure</a></li>\n<li class=\"last leaf\"><a
+        href=\"/node/210\" title=\"\">Make Your Submission</a></li>\n</ul></li>\n<li
+        class=\"last expanded\"><a href=\"/publications\" title=\"\">Publications</a><ul
+        class=\"menu\"><li class=\"first leaf\"><a href=\"/publications/order-paper-list\"
+        title=\"\">Order Paper</a></li>\n<li class=\"expanded\"><a href=\"/publications/debates-list\"
+        title=\"\">Debates and Proceedings</a><ul class=\"menu\"><li class=\"first
+        leaf\"><a href=\"/publications/debates-list\" title=\"\">Debates and Proceedings</a></li>\n<li
+        class=\"last leaf\"><a href=\"/publications/debates-proceedings\" title=\"\">Debates
+        and Proceedings (OLD)</a></li>\n</ul></li>\n<li class=\"leaf\"><a href=\"/publications/votes-proceedings\"
+        title=\"\">Votes and Proceedings</a></li>\n<li class=\"leaf\"><a href=\"/publications/budget-debates\"
+        title=\"\">Budget Speech</a></li>\n<li class=\"leaf\"><a href=\"/publications/yellow-book\"
+        title=\"\">Yellow Book</a></li>\n<li class=\"leaf\"><a href=\"/publications/presidential-debates\"
+        title=\"\">Presidential Speeches</a></li>\n<li class=\"expanded\"><a href=\"/acts/volumes\"
+        title=\"\">Laws of Zambia</a><ul class=\"menu\"><li class=\"first leaf\"><a
+        href=\"/acts-of-parliament\" title=\"\">Acts</a></li>\n<li class=\"leaf\"><a
+        href=\"/publications/bills-list\" title=\"\">Bills</a></li>\n<li class=\"last
+        leaf\"><a href=\"/acts/volumes\" title=\"\">Laws of Zambia</a></li>\n</ul></li>\n<li
+        class=\"leaf\"><a href=\"/node/4834\" title=\"\">Constitution Amendment Act
+        2016</a></li>\n<li class=\"leaf\"><a href=\"/publications/ministerial-statements\"
+        title=\"\">Ministerial Statements</a></li>\n<li class=\"leaf\"><a href=\"/node/145\">Library
+        E-Resources</a></li>\n<li class=\"leaf\"><a href=\"/agreements/gov_agreements\"
+        title=\"\">Government Agreements</a></li>\n<li class=\"last leaf\"><a href=\"/publications/standing_orders\"
+        title=\"\">Standing Orders</a></li>\n</ul></li>\n</ul>  </div>\n</div>\n  </div>\n</div>\n
+        \     <div class=\"search-form\">  <div class=\"region region-search-form\">\n
+        \   <div id=\"block-search-form\" class=\"block block-search\">\n\n    \n
+        \ <div class=\"content\">\n    <form action=\"/node/5314\" method=\"post\"
+        id=\"search-block-form\" accept-charset=\"UTF-8\"><div><div class=\"container-inline\">\n
+        \     <h2 class=\"element-invisible\">Search form</h2>\n    <div class=\"form-item
+        form-type-textfield form-item-search-block-form\">\n  <label class=\"element-invisible\"
+        for=\"edit-search-block-form--2\">Search </label>\n <input title=\"Enter the
+        terms you wish to search for.\" onblur=\"if (this.value == &#039;&#039;) {this.value
+        = &#039;search site&#039;;}\" onfocus=\"if (this.value == &#039;search site&#039;)
+        {this.value = &#039;&#039;;}\" type=\"text\" id=\"edit-search-block-form--2\"
+        name=\"search_block_form\" value=\"search site\" size=\"15\" maxlength=\"128\"
+        class=\"form-text\" />\n</div>\n<div class=\"form-actions form-wrapper\" id=\"edit-actions\"><input
+        alt=\"Search Button\" type=\"submit\" id=\"edit-submit\" name=\"op\" value=\"\"
+        class=\"form-submit\" /></div><input type=\"hidden\" name=\"form_build_id\"
+        value=\"form-ibACWXXK3ZcEYksS8Sqmtn_rozuDrvt-llIEIs9b358\" />\n<input type=\"hidden\"
+        name=\"form_id\" value=\"search_block_form\" />\n</div>\n</div></form>  </div>\n</div>\n
+        \ </div>\n</div>\n    </div>\n  </div>\n  <!--End Nav Menu-->\n  \n  \n  \n
+        \ <!--Main Content Area -->\n  <div class=\"main-wrap\">\n    <!-- Body -->\n
+        \   <div class=\"body-content\">    \n      <!--Main Content-->\n      <div
+        class=\"main-content\">\n        <!--Breadcrumbs-->\n        <div class=\"breadcrumbs-wrap\">\n
+        \                     <div class=\"breadcrumbs\"><div id=\"breadcrumb\"><h2
+        class=\"element-invisible\">You are here</h2><div class=\"breadcrumb\"><a
+        href=\"/\">Home</a></div></div></div>\n                  </div>\n        <!--End
+        Bread Crumbs -->\n        \n        <!--Slider-->\n        <div class=\"slider\">\n
+        \                 </div>\n        <!--End Slider-->\n        \n        <!--Page
+        title-->\n                   <div class=\"title-wrap\">\n            <h1 id=\"page-title\">Princess
+        \ Kasune </h1>\n          </div>\n                  <!--End Page title-->\n
+        \       <!-- Parliament Homepage Content-->\n                 <!--End Parliament
+        Homepage Content-->\n        <div class=\"content\">\n                      <div
+        class=\"region region-content\">\n    <div id=\"block-system-main\" class=\"block
+        block-system\">\n\n    \n  <div class=\"content\">\n    <div id=\"node-5314\"
+        class=\"node node-mp clearfix\" about=\"/node/5314\" typeof=\"sioc:Item foaf:Document\">\n\n
+        \ \n      <span property=\"dc:title\" content=\"Princess  Kasune \" class=\"rdf-meta
+        element-hidden\"></span><span property=\"sioc:num_replies\" content=\"0\"
+        datatype=\"xsd:integer\" class=\"rdf-meta element-hidden\"></span>\n  \n  <div
+        class=\"content\">\n    <div class=\"field field-name-field-first-name field-type-text
+        field-label-above\"><div class=\"field-label\">First Name:&nbsp;</div><div
+        class=\"field-items\"><div class=\"field-item even\">Princess</div></div></div><div
+        class=\"field field-name-field-last-name field-type-text field-label-above\"><div
+        class=\"field-label\">Last Name:&nbsp;</div><div class=\"field-items\"><div
+        class=\"field-item even\">Kasune</div></div></div><div class=\"field field-name-field-gender
+        field-type-list-text field-label-above\"><div class=\"field-label\">Gender:&nbsp;</div><div
+        class=\"field-items\"><div class=\"field-item even\">Female</div></div></div><div
+        class=\"field field-name-field-marital-status field-type-list-text field-label-above\"><div
+        class=\"field-label\">Marital Status:&nbsp;</div><div class=\"field-items\"><div
+        class=\"field-item even\">Married</div></div></div><div class=\"field field-name-field-status
+        field-type-list-text field-label-above\"><div class=\"field-label\">Status:&nbsp;</div><div
+        class=\"field-items\"><div class=\"field-item even\">Active</div></div></div><div
+        class=\"field field-name-field-date field-type-datetime field-label-above\"><div
+        class=\"field-label\">Date of Birth:&nbsp;</div><div class=\"field-items\"><div
+        class=\"field-item even\"><span class=\"date-display-single\" property=\"dc:date\"
+        datatype=\"xsd:dateTime\" content=\"1975-11-12T00:00:00+02:00\">Wednesday,
+        November 12, 1975</span></div></div></div><div class=\"field field-name-field-email
+        field-type-email field-label-above\"><div class=\"field-label\">Email:&nbsp;</div><div
+        class=\"field-items\"><div class=\"field-item even\"><a href=\"mailto:pkasune@parliament.gov.zm\">pkasune@parliament.gov.zm</a></div></div></div><div
+        class=\"field field-name-field-postal-address field-type-text-long field-label-above\"><div
+        class=\"field-label\">Postal Address:&nbsp;</div><div class=\"field-items\"><div
+        class=\"field-item even\">National Assembly of Zambia\r\nParliament Building\r\nP.O
+        Box 31299</div></div></div><div class=\"field field-name-field-salutation
+        field-type-taxonomy-term-reference field-label-above\"><div class=\"field-label\">Salutation:&nbsp;</div><div
+        class=\"field-items\"><div class=\"field-item even\"><a href=\"/taxonomy/term/230\"
+        typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\">Hon.</a></div><div
+        class=\"field-item odd\"><a href=\"/taxonomy/term/233\" typeof=\"skos:Concept\"
+        property=\"rdfs:label skos:prefLabel\" datatype=\"\">Ms.</a></div></div></div><div
+        class=\"field field-name-field-profession field-type-taxonomy-term-reference
+        field-label-above\"><div class=\"field-label\">Profession:&nbsp;</div><div
+        class=\"field-items\"><div class=\"field-item even\"><a href=\"/taxonomy/term/1759\"
+        typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\">Humanitarian
+        / Public Speaker/Theologian/ Fundraiser</a></div></div></div><div class=\"field
+        field-name-field-educational-qualification field-type-taxonomy-term-reference
+        field-label-above\"><div class=\"field-label\">Educational Qualification:&nbsp;</div><div
+        class=\"field-items\"><div class=\"field-item even\"><a href=\"/taxonomy/term/400\"
+        typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\">Grade
+        12</a></div><div class=\"field-item odd\"><a href=\"/taxonomy/term/1774\"
+        typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\">Masters
+        in Divinity (Theology)</a></div><div class=\"field-item even\"><a href=\"/taxonomy/term/1761\"
+        typeof=\"skos:Concept\" property=\"rdfs:label skos:prefLabel\" datatype=\"\">Masters
+        in Non-Profit Administration</a></div></div></div>  </div>\n\n  \n  \n</div>\n
+        \ </div>\n</div>\n  </div>\n        </div>\n      </div>\n      <!--End Main
+        Content -->\n      \n      <!--Rightbar Content-->\n      <div class=\"rightbar-content\">\n\t<!--
+        <div><a href=\"http://www.ipu134zambia.zm\"><img src=\"/sites/all/themes/parliamentpro/images/134_ipu.png\"/></a></div>
+        -->\n\t<!-- <div class=\"ipu-video-streamer\">\n\t\tPlenary\n\t    <iframe
+        src=\"http://livestream.com/accounts/10713723/events/4989558/player?width=230&height=180&autoPlay=true&mute=false\"
+        width=\"230\" height=\"180\" frameborder=\"0\" scrolling=\"no\"> </iframe>\n\t\tWomen
+        Parliamentarians\n\n\t    <iframe id=\"ls_embed_1458400587\" src=\"//livestream.com/accounts/10713723/events/5007181/player?width=230&height=180&autoPlay=true&mute=false\"
+        width=\"230\" height=\"180\" frameborder=\"0\" scrolling=\"no\"></iframe>\n<script
+        type=\"text/javascript\" data-embed_id=\"ls_embed_1458400587\" src=\"//livestream.com/assets/plugins/referrer_tracking.js\"></script>\n\t</div>
+        -->\n          <div class=\"region region-rightbar-content\">\n    <div id=\"block-views-members-of-parliament-block-1\"
+        class=\"block block-views\">\n\n    <h2>Parliamentary History</h2>\n  \n  <div
+        class=\"content\">\n    <div class=\"view view-members-of-parliament view-id-members_of_parliament
+        view-display-id-block_1 view-dom-id-f677cd5223cf087d2853861e97199c09\">\n
+        \       \n  \n  \n      <div class=\"view-content\">\n        <div class=\"views-row
+        views-row-1 views-row-odd views-row-first views-row-last\">\n      \n  <div
+        class=\"views-field views-field-field-constituency-name\">        <div class=\"field-content\">Keembe
+        - <span class=\"date-display-single\" property=\"dc:date\" datatype=\"xsd:dateTime\"
+        content=\"2016-08-11T00:00:00+02:00\">2016</span> - UPND </div>  </div>  </div>\n
+        \   </div>\n  \n  \n  \n  \n  \n  \n</div>  </div>\n</div>\n<div id=\"block-views-members-of-parliament-block-2\"
+        class=\"block block-views\">\n\n    <h2>Government Portfolio History</h2>\n
+        \ \n  <div class=\"content\">\n    <div class=\"view view-members-of-parliament
+        view-id-members_of_parliament view-display-id-block_2 view-dom-id-4a75a7dabd529f8fb9b99e7c271b53dc\">\n
+        \       \n  \n  \n      <div class=\"view-content\">\n        <div class=\"views-row
+        views-row-1 views-row-odd views-row-first views-row-last\">\n      \n  <div
+        class=\"views-field views-field-field-portfolio\">        <div class=\"field-content\">Back
+        Bench - &lt;none&gt; (<span class=\"date-display-single\" property=\"dc:date\"
+        datatype=\"xsd:dateTime\" content=\"2016-08-11T00:00:00+02:00\">Aug 2016</span>)</div>
+        \ </div>  </div>\n    </div>\n  \n  \n  \n  \n  \n  \n</div>  </div>\n</div>\n<div
+        id=\"block-views-members-of-parliament-block-3\" class=\"block block-views\">\n\n
+        \   <h2>Committee History</h2>\n  \n  <div class=\"content\">\n    <div class=\"view
+        view-members-of-parliament view-id-members_of_parliament view-display-id-block_3
+        view-dom-id-c984ff0cee44ae772e08381341476a82\">\n        \n  \n  \n      <div
+        class=\"view-content\">\n        <div class=\"views-row views-row-1 views-row-odd
+        views-row-first views-row-last\">\n      \n  <div class=\"views-field views-field-field-committee\">
+        \       <div class=\"field-content\"><a href=\"/node/206\">Health, Community
+        Development and Social Services</a></div>  </div>  \n  <div class=\"views-field
+        views-field-field-start-date\">        <div class=\"field-content\"><span
+        class=\"date-display-single\" property=\"dc:date\" datatype=\"xsd:dateTime\"
+        content=\"2016-10-12T11:00:00+02:00\">Oct 2016</span> - </div>  </div>  </div>\n
+        \   </div>\n  \n  \n  \n  \n  \n  \n</div>  </div>\n</div>\n  </div>\n      </div>\n
+        \     <!--End Rightbar Content-->\n    </div>\n    <!--End body -->\n  </div>\n
+        \ <!--End Main Content Area -->\n  <!--Footer Logo-->\n  <div class=\"footer-logo-wrap\">\n
+        \   <div class=\"footer-content\">\n            </div>\n    <div class=\"footer-logo\">\n
+        \     <h1><a class=\"logo-parliament\" href=\"#\"><span>parliament.gov.zm</span></a></h1>\n
+        \   </div>\n  </div>\n  <!--End Footer Logo-->\n  \n  <!--Bottom Content-->\n
+        \ <div class=\"bottom-content-wrap\">\n    <div class=\"bottom-content\">\n
+        \       <div class=\"region region-menu-links\">\n      <div class=\"region
+        region-menu-links\">\n    <div id=\"block-system-main-menu\" class=\"block
+        block-system block-menu\">\n\n    \n  <div class=\"content\">\n    <ul class=\"menu\"><li
+        class=\"first leaf\"><a href=\"/\">Home</a></li>\n<li class=\"expanded\"><a
+        href=\"/node/108\" title=\"\">About Parliament</a><ul class=\"menu\"><li class=\"first
+        leaf\"><a href=\"/node/4529\">About National Assembly</a></li>\n<li class=\"leaf\"><a
+        href=\"/node/111\" title=\"\">History</a></li>\n<li class=\"expanded\"><a
+        href=\"/the-clerk\" title=\"\">The Clerk&#039;s Office</a><ul class=\"menu\"><li
+        class=\"first leaf\"><a href=\"/the-clerk\" title=\"\">The Clerk</a></li>\n<li
+        class=\"last leaf\"><a href=\"/node/159\">Departments</a></li>\n</ul></li>\n<li
+        class=\"leaf\"><a href=\"/invitations/career\" title=\"\">Careers at Parliament</a></li>\n<li
+        class=\"leaf\"><a href=\"/invitations/tenders\" title=\"\">Procurement</a></li>\n<li
+        class=\"leaf\"><a href=\"/node/110\">Visiting parliament</a></li>\n<li class=\"last
+        leaf\"><a href=\"/locationmap\" title=\"\">Contact Us</a></li>\n</ul></li>\n<li
+        class=\"expanded\"><a href=\"/members-of-parliament\" title=\"\">Members</a><ul
+        class=\"menu\"><li class=\"first expanded\"><a href=\"/presiding-officers%20\"
+        title=\"\">Presiding Officers</a><ul class=\"menu\"><li class=\"first leaf\"><a
+        href=\"/the-speaker/51\" title=\"\">The Speaker</a></li>\n<li class=\"leaf\"><a
+        href=\"/deputy-speaker/53\" title=\"\">The First Deputy Speaker</a></li>\n<li
+        class=\"last leaf\"><a href=\"/deputy-chairperson/63\" title=\"\">The Second
+        Deputy Speaker</a></li>\n</ul></li>\n<li class=\"expanded\"><a href=\"/ministers\"
+        title=\"\">Ministers</a><ul class=\"menu\"><li class=\"first leaf\"><a href=\"/members/cabinet\"
+        title=\"\">Cabinet</a></li>\n<li class=\"leaf\"><a href=\"/ministers/cabinet\"
+        title=\"\">Cabinet Ministers</a></li>\n<li class=\"last leaf\"><a href=\"/ministers/provincial\"
+        title=\"\">Provincial Ministers</a></li>\n</ul></li>\n<li class=\"leaf\"><a
+        href=\"/whips\" title=\"\">Whips</a></li>\n<li class=\"expanded\"><a href=\"/members-of-parliament\"
+        title=\"\">Members of Parliament</a><ul class=\"menu\"><li class=\"first leaf\"><a
+        href=\"/members/gender\" title=\"\">Gender Representation</a></li>\n<li class=\"leaf\"><a
+        href=\"/members/party\" title=\"\">Party Representation</a></li>\n<li class=\"last
+        leaf\"><a href=\"/members-of-parliament\" title=\"\">Members List</a></li>\n</ul></li>\n<li
+        class=\"leaf\"><a href=\"/members/constituencies\" title=\"\">Constituencies</a></li>\n<li
+        class=\"last leaf\"><a href=\"/members/previous-assembly\" title=\"List of
+        Members of Parliament in the 11th Assembly\">Immediate Past MPs</a></li>\n</ul></li>\n<li
+        class=\"expanded\"><a href=\"/committees\" title=\"\">Committees</a><ul class=\"menu\"><li
+        class=\"first leaf\"><a href=\"/node/109\">Committee System</a></li>\n<li
+        class=\"leaf\"><a href=\"/committees\" title=\"\">Committees</a></li>\n<li
+        class=\"leaf\"><a href=\"/node/91\">Attendance Guidlines</a></li>\n<li class=\"leaf\"><a
+        href=\"/committees/composition\" title=\"\">Committee Composition</a></li>\n<li
+        class=\"leaf\"><a href=\"/committees/timetable_grid\" title=\"Committee Sittings\">Committee
+        Timetable</a></li>\n<li class=\"expanded\"><a href=\"/committees/list-reports\"
+        title=\"\">Committee Reports</a><ul class=\"menu\"><li class=\"first leaf\"><a
+        href=\"/committees/all-reports/main\" title=\"Main Reports\">Main</a></li>\n<li
+        class=\"leaf\"><a href=\"/committees/all-reports/bills\" title=\"\">Bills</a></li>\n<li
+        class=\"leaf\"><a href=\"/committees/all-reports/select\" title=\"\">Select
+        (Ad Hoc)</a></li>\n<li class=\"last leaf\"><a href=\"/committees/all-reports/treaties\"
+        title=\"\">Treaties/ Agreements</a></li>\n</ul></li>\n<li class=\"leaf\"><a
+        href=\"/node/444\">Submission Procedure</a></li>\n<li class=\"last leaf\"><a
+        href=\"/node/210\" title=\"\">Make Your Submission</a></li>\n</ul></li>\n<li
+        class=\"last expanded\"><a href=\"/publications\" title=\"\">Publications</a><ul
+        class=\"menu\"><li class=\"first leaf\"><a href=\"/publications/order-paper-list\"
+        title=\"\">Order Paper</a></li>\n<li class=\"expanded\"><a href=\"/publications/debates-list\"
+        title=\"\">Debates and Proceedings</a><ul class=\"menu\"><li class=\"first
+        leaf\"><a href=\"/publications/debates-list\" title=\"\">Debates and Proceedings</a></li>\n<li
+        class=\"last leaf\"><a href=\"/publications/debates-proceedings\" title=\"\">Debates
+        and Proceedings (OLD)</a></li>\n</ul></li>\n<li class=\"leaf\"><a href=\"/publications/votes-proceedings\"
+        title=\"\">Votes and Proceedings</a></li>\n<li class=\"leaf\"><a href=\"/publications/budget-debates\"
+        title=\"\">Budget Speech</a></li>\n<li class=\"leaf\"><a href=\"/publications/yellow-book\"
+        title=\"\">Yellow Book</a></li>\n<li class=\"leaf\"><a href=\"/publications/presidential-debates\"
+        title=\"\">Presidential Speeches</a></li>\n<li class=\"expanded\"><a href=\"/acts/volumes\"
+        title=\"\">Laws of Zambia</a><ul class=\"menu\"><li class=\"first leaf\"><a
+        href=\"/acts-of-parliament\" title=\"\">Acts</a></li>\n<li class=\"leaf\"><a
+        href=\"/publications/bills-list\" title=\"\">Bills</a></li>\n<li class=\"last
+        leaf\"><a href=\"/acts/volumes\" title=\"\">Laws of Zambia</a></li>\n</ul></li>\n<li
+        class=\"leaf\"><a href=\"/node/4834\" title=\"\">Constitution Amendment Act
+        2016</a></li>\n<li class=\"leaf\"><a href=\"/publications/ministerial-statements\"
+        title=\"\">Ministerial Statements</a></li>\n<li class=\"leaf\"><a href=\"/node/145\">Library
+        E-Resources</a></li>\n<li class=\"leaf\"><a href=\"/agreements/gov_agreements\"
+        title=\"\">Government Agreements</a></li>\n<li class=\"last leaf\"><a href=\"/publications/standing_orders\"
+        title=\"\">Standing Orders</a></li>\n</ul></li>\n</ul>  </div>\n</div>\n  </div>\n
+        \ </div>\n    </div>\n  </div>\n  <!--End Bottom Content-->\n  \n  <!--Footer-->\n
+        \ <div class=\"footer-wrap\">\n    <div class=\"footer\">\n      <ul class=\"footer-links\">\n
+        \       <li><a href=\"/node/3595\">Use Policy</a></li>\n        <li><a href=\"/locationmap\">Contact
+        Us</a></li>\n        <li><a href=\"http://mail.parliament.gov.zm\">Mail</a></li>\n
+        \       <li class=\"last\"><a href=\"http://streamer.parliament.gov.zm:8063/listen.pls\">Radio</a></li>\n
+        \     </ul>\n      <ul class=\"copyright\">\n        <li>&copy; 2017 National
+        Assembly of Zambia.<br>Powered by <a href=\"http://www.drupal.org\">Drupal</a></li>\n
+        \     </ul>\n    </div>\n  </div>\n  <!--End Footer-->\n  \n</div>\n\n    <!--[if
+        IE]</div><![endif]-->\n</body>\n</html>\n"
+    http_version: 
+  recorded_at: Tue, 28 Feb 2017 12:18:04 GMT
+recorded_with: VCR 3.0.3

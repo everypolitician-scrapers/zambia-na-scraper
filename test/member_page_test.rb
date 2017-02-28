@@ -16,4 +16,16 @@ describe MemberPage do
       response.to_h.must_equal yaml_data[:to_h]
     end
   end
+
+  describe 'Member data without image' do
+    subject { 'test/data/PrincessKasune.yml' }
+
+    it 'should return nil for image' do
+      response.photo.must_be_nil
+    end
+
+    it 'should contain the expected data' do
+      response.to_h.must_equal yaml_data[:to_h]
+    end
+  end
 end
