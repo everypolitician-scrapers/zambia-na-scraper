@@ -33,7 +33,7 @@ pages.each do |page|
     mp_page = scrape row.source => MemberPage
     data = row.to_h
               .merge(mp_page.to_h)
-              .merge(term: 2011)
+              .merge(term: 2016)
     ScraperWiki.save_sqlite(%i(name term), data)
     added += 1
   end
