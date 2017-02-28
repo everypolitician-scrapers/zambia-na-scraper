@@ -10,4 +10,8 @@ class MembersPage < Scraped::HTML
       fragment row => MemberRow
     end
   end
+
+  field :next do
+    noko.xpath('//a[contains(@title,"Go to next page")]/@href').text
+  end
 end
