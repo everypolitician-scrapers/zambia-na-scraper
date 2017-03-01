@@ -1,4 +1,8 @@
 language: ruby
-cache: bundler
 rvm:
   - 2.3.3
+sudo: false
+cache: bundler
+script:
+  - bundle exec rake
+  - bin/check-fail.sh
