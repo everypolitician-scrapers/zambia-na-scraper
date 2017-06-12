@@ -9,33 +9,24 @@ require_rel 'lib'
 require 'open-uri/cached'
 OpenURI::Cache.cache_path = '.cache'
 
-BASE = 'http://www.parliament.gov.zm'
-
 def scrape(h)
   url, klass = h.to_a.first
   klass.new(response: Scraped::Request.new(url: url).response)
 end
 
-ScraperWiki.sqliteexecute('DELETE FROM data') rescue nil
-
-# We should really extract these from the 'Next' links
-pages = [
-  '/members-of-parliament',
-  '/members-of-parliament/page/1/0',
-  '/members-of-parliament/page/2/0',
-]
-
-added = 0
-pages.each do |page|
-  url = URI.join(BASE, page).to_s
-  warn "Fetching #{url}"
-  (scrape url => MembersPage).member_rows.each do |row|
+def data_for_members(url)
+  members_page = (scrape url => MembersPage)
+  members_data = members_page.member_rows.map do |row|
     mp_page = scrape row.source => MemberPage
-    data = row.to_h
-              .merge(mp_page.to_h)
-              .merge(source: url, term: 2011)
-    ScraperWiki.save_sqlite(%i[name term], data)
-    added += 1
+    row.to_h
+       .merge(mp_page.to_h)
+       .merge(source: url, term: 2011)
   end
+  next_page = members_page.next
+  return members_data if next_page.empty?
+  members_data.concat(data_for_members(next_page))
 end
-puts "  Added #{added}"
+
+ScraperWiki.sqliteexecute('DELETE FROM data') rescue nil
+data = data_for_members('http://www.parliament.gov.zm/members-of-parliament')
+ScraperWiki.save_sqlite(%i[name term], data)
