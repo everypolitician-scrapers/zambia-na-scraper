@@ -27,6 +27,6 @@ def data_for_members(url)
   members_data.concat(data_for_members(next_page))
 end
 
-ScraperWiki.sqliteexecute('DELETE FROM data') rescue nil
+ScraperWiki.sqliteexecute('DROP TABLE data') rescue nil
 data = data_for_members('http://www.parliament.gov.zm/members-of-parliament')
 ScraperWiki.save_sqlite(%i[name term], data)
