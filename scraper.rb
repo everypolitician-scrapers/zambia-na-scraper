@@ -23,6 +23,7 @@ pages = [
   '/members-of-parliament',
   '/members-of-parliament/page/1/0',
   '/members-of-parliament/page/2/0',
+  '/members-of-parliament/page/3/0',
 ]
 
 data = pages.flat_map do |page|
