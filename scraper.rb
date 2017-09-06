@@ -32,6 +32,6 @@ pages.each do |page|
     mp_page = scrape row.source => MemberPage
     data = row.to_h.merge(mp_page.to_h).merge(source: url)
     puts data.reject { |_, v| v.to_s.empty? }.sort_by { |k, _| k }.to_h if ENV['MORPH_DEBUG']
-    ScraperWiki.save_sqlite(%i[name], data)
+    ScraperWiki.save_sqlite(%i[id], data)
   end
 end
