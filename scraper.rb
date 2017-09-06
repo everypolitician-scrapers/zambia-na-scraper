@@ -25,15 +25,13 @@ pages = [
   '/members-of-parliament/page/2/0',
 ]
 
-added = 0
 pages.each do |page|
   url = URI.join(BASE, page).to_s
   warn "Fetching #{url}"
   (scrape url => MembersPage).member_rows.each do |row|
     mp_page = scrape row.source => MemberPage
     data = row.to_h.merge(mp_page.to_h).merge(source: url)
+    puts data.reject { |_, v| v.to_s.empty? }.sort_by { |k, _| k }.to_h if ENV['MORPH_DEBUG']
     ScraperWiki.save_sqlite(%i[name], data)
-    added += 1
   end
 end
-puts "  Added #{added}"
