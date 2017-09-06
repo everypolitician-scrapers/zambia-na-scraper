@@ -31,10 +31,8 @@ pages.each do |page|
   warn "Fetching #{url}"
   (scrape url => MembersPage).member_rows.each do |row|
     mp_page = scrape row.source => MemberPage
-    data = row.to_h
-              .merge(mp_page.to_h)
-              .merge(source: url, term: 2011)
-    ScraperWiki.save_sqlite(%i[name term], data)
+    data = row.to_h.merge(mp_page.to_h).merge(source: url)
+    ScraperWiki.save_sqlite(%i[name], data)
     added += 1
   end
 end
