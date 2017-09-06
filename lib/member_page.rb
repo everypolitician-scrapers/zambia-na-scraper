@@ -15,4 +15,8 @@ class MemberPage < Scraped::HTML
         .split('T')
         .first
   end
+
+  field :photo do
+    noko.css('.field-name-field-picture .field-item img/@src').text
+  end
 end
