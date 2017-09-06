@@ -25,13 +25,12 @@ pages = [
   '/members-of-parliament/page/2/0',
 ]
 
-pages.each do |page|
+data = pages.flat_map do |page|
   url = URI.join(BASE, page).to_s
-  warn "Fetching #{url}"
-  (scrape url => MembersPage).member_rows.each do |row|
-    mp_page = scrape row.source => MemberPage
-    data = row.to_h.merge(mp_page.to_h)
-    puts data.reject { |_, v| v.to_s.empty? }.sort_by { |k, _| k }.to_h if ENV['MORPH_DEBUG']
-    ScraperWiki.save_sqlite(%i[id], data)
+  scrape(url => MembersPage).member_rows.map do |row|
+    row.to_h.merge(scrape(row.source => MemberPage).to_h)
   end
 end
+
+data.each { |mem| puts mem.reject { |_, v| v.to_s.empty? }.sort_by { |k, _| k }.to_h } if ENV['MORPH_DEBUG']
+ScraperWiki.save_sqlite(%i[id], data)
