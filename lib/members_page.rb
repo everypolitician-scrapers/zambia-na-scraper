@@ -3,7 +3,7 @@
 require 'scraped'
 
 class MembersPage < Scraped::HTML
-  decorator Scraped::Response::Decorator::AbsoluteUrls
+  decorator Scraped::Response::Decorator::CleanUrls
 
   field :member_rows do
     noko.css('div.view-members-of-parliament div.panel-display').map do |row|
